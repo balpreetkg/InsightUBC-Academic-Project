@@ -1,0 +1,21 @@
+{
+    "title": "where less than -1 students pass",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": -1
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_instructor",
+                "courses_pass"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]
+}

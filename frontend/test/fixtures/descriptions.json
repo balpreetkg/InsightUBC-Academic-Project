@@ -1,0 +1,8 @@
+{
+    "query1": "query testing complex transformations with the new order format",
+    "query2": "query testing the AND operator",
+    "query3": "query testing the OR operator",
+    "query4": "query testing the none of the following option",
+    "query5": "query testing the not button",
+    "query6": "query testing an empty WHERE block"
+}

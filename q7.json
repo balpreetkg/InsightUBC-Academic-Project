@@ -1,0 +1,28 @@
+{
+    "title": "query testing the equality operator",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_pass": 2438
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_fail",
+                "courses_instructor",
+                "courses_audit"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "econ",
+            "courses_fail": 135,
+            "courses_instructor": "",
+            "courses_audit": 0
+        }
+    ]
+}

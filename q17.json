@@ -1,0 +1,19 @@
+{
+    "title": "query that tries to do EQ on a course department",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_dept": "math"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

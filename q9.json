@@ -1,0 +1,23 @@
+{
+    "title": "query testing greater than 100 average",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "LT": {
+                    "courses_avg": 100
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_instructor",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

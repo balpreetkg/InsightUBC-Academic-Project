@@ -1,0 +1,184 @@
+{
+    "query1": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 1
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "hay",
+                "ya"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "hay",
+                    "ya"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "hay": {
+                        "AVG": "courses_pass"
+                    }
+                },
+                {
+                    "ya": {
+                        "MIN": "courses_avg"
+                    }
+                },
+                {
+                    "mayne": {
+                        "AVG": "courses_fail"
+                    }
+                }
+            ]
+        }
+    },
+    "query2": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_pass": 3
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "math"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "query3": {
+        "WHERE": {
+            "OR": [
+                {
+                    "LT": {
+                        "courses_pass": 1
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "espe"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "query4": {
+        "WHERE": {
+            "NOT": {
+                "OR": [
+                    {
+                        "LT": {
+                            "courses_avg": 99
+                        }
+                    },
+                    {
+                        "IS": {
+                            "courses_dept": "espe"
+                        }
+                    }
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_avg",
+                    "courses_dept"
+                ]
+            }
+        }
+    },
+    "query5": {
+        "WHERE": {
+            "NOT": {
+                "OR": [
+                    {
+                        "LT": {
+                            "courses_avg": 99
+                        }
+                    },
+                    {
+                        "IS": {
+                            "courses_dept": "espe"
+                        }
+                    },
+                    {
+                        "NOT": {
+                            "IS": {
+                                "courses_instructor": "cox, daniel"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "courses_avg",
+                    "courses_dept"
+                ]
+            }
+        }
+    },
+    "query6": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_year",
+                "hey"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_year"
+            ],
+            "APPLY": [
+                {
+                    "hey": {
+                        "MAX": "courses_avg"
+                    }
+                }
+            ]
+        }
+    }
+
+
+}

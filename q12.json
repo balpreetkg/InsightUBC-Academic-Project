@@ -1,0 +1,23 @@
+{
+    "title": "query using the wrong syntax",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "DOESNT_EXIST": {
+                    "courses_avg": "100"
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_instructor",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

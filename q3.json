@@ -1,0 +1,6 @@
+{
+    "title": "SELECT dept, avg WHERE avg > 97",
+    "query": { "OPTIONS": {} },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

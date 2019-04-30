@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/controller/InsightFacade.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/controller</a> InsightFacade.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">94.81% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>73/77</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">87.88% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>29/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>15/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">94.81% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>73/77</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">35664x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90x</span>
+<span class="cline-any cline-yes">90x</span>
+<span class="cline-any cline-yes">90x</span>
+<span class="cline-any cline-yes">90x</span>
+<span class="cline-any cline-yes">90x</span>
+<span class="cline-any cline-yes">90x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90x</span>
+<span class="cline-any cline-yes">90x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Log from "../Util";
+import {IInsightFacade, InsightDataset, InsightDatasetKind, InsightError, NotFoundError} from "./IInsightFacade";
+import * as JSZip from "jszip";
+import Helpers from "./Helpers";
+import {isObject, log} from "util";
+import Query from "./Query";
+&nbsp;
+/**
+ * This is the main programmatic entry point for the project.
+ * Method documentation is in IInsightFacade
+ *
+ */
+export default class InsightFacade implements IInsightFacade {
+&nbsp;
+    constructor() {
+        Log.trace("InsightFacadeImpl::init()");
+    }
+&nbsp;
+    public addDataset(id: string, content: string, kind: InsightDatasetKind): Promise&lt;string[]&gt; {
+        if (!id || !content || !kind) {
+            return Promise.reject(new InsightError("Passing null parameters"));
+        } else if (kind !== InsightDatasetKind.Courses) {
+            return Promise.reject(new InsightError("Trying to add dataset of the wrong kind"));
+        } else {
+            return new Promise(function (fulfill, reject) {
+                if (!Helpers.prototype.listAddedDatasetIds().includes(id)) {// todo if id is not already on the list
+                    let newZip = new JSZip();
+                    newZip.loadAsync(content, {base64: true, createFolders: true})
+                        .then(function (zip) {
+                            let lcourses: Array&lt;Promise&lt;string&gt;&gt; = [];
+                            <span class="missing-if-branch" title="if path not taken" >I</span>if (!zip.folder(/courses/).length) {
+<span class="cstat-no" title="statement not covered" >                                reject(new InsightError("No courses folder"));</span>
+                            } else <span class="missing-if-branch" title="if path not taken" >I</span>if (!Object.values(zip.folder("courses").files).length) {
+<span class="cstat-no" title="statement not covered" >                                reject(new InsightError("Empty dataset")); </span>//  todo if nonempty dset only empty result
+                            } else {
+                                zip.folder("courses").forEach(function (relativePath, file) {
+                                    lcourses.push(Helpers.prototype.addCourses(relativePath, file, id));
+                                });
+                                if (lcourses.length) {
+                                    return Promise.all(lcourses);
+                                } else {
+                                    reject(new InsightError("No courses found in the dataset"));
+                                }
+                            }
+                        }).then(function (promiseArray) {
+                            let fs = require("fs");
+                            const dir1 = "./data";
+                            const dir2 = "./data/courses";
+                            if (!fs.existsSync(dir1)) {
+                                fs.mkdirSync(dir1);
+                            }
+                            if (!fs.existsSync(dir2)) {
+                                fs.mkdirSync(dir2);
+                            }
+                            return Helpers.prototype.writeDatasetToFile(promiseArray, id);
+                        }).catch(function (err) {
+                            reject(new InsightError(err));
+                        }).then(function (success) {
+                            if (success) {
+                                fulfill(Helpers.prototype.listAddedDatasetIds());
+                            }
+                        }).catch( <span class="fstat-no" title="function not covered" >function (</span>err) {
+<span class="cstat-no" title="statement not covered" >                            reject(new InsightError(err));</span>
+                        });
+                } else {
+                    reject(new InsightError("Dataset already added"));
+                }
+            });
+        }
+    }
+&nbsp;
+    public removeDataset(id: string): Promise&lt;string&gt; {
+        if (!id) {
+            return Promise.reject(new InsightError("Passing null id"));
+        } else {
+            return new Promise(function (fulfill, reject) {
+                let fs = require("fs");
+                fs.unlink("./data/courses/" + id + ".json", (err: any) =&gt; {
+                    if (err) {
+                        reject(new NotFoundError(err));
+                    } else if (!Helpers.prototype.listAddedDatasetIds().length) {
+                        fs.rmdirSync("./data/courses");
+                        fs.rmdirSync("./data");
+                    }
+                    fulfill(id);
+                });
+            });
+        }
+    }
+&nbsp;
+    public performQuery(query: any): Promise &lt;any[]&gt; {
+        return new Promise((fulfill, reject) =&gt; {
+            <span class="missing-if-branch" title="else path not taken" >E</span>if (isObject(query)) {
+                const q: Query = new Query();
+                let array: any[] = [];
+                try {
+                    array = q.arrayCreator(query);
+                } catch (e) {
+                    reject(new InsightError("Error" + e));
+                }
+                try {
+                    fulfill(q.computeQuery(query, array));
+                } catch (e) {
+                    reject(new InsightError("Error" + e));
+                }
+            } else {
+<span class="cstat-no" title="statement not covered" >                reject(new InsightError("Error: query not an object"));</span>
+            }
+        });
+    }
+&nbsp;
+    public listDatasets(): Promise&lt;InsightDataset[]&gt; {
+        return new Promise(function (fulfill) {
+            let set: InsightDataset[] = [];
+            let fs = require("fs");
+            const path0 = "./data";
+            const path = "./data/courses";
+            if (fs.existsSync(path)) {
+                let files = fs.readdirSync(path);
+                for (let filename of files) {
+                    <span class="missing-if-branch" title="else path not taken" >E</span>if (filename.endsWith(".json")) {
+                        let id = filename.slice(0, -5);
+                        log(id);
+                        let file = fs.readFileSync(path + "/" + filename, "utf8");
+                        let j = JSON.parse(file);
+                        let len = Object.values(j).length;
+                        set.push({id, numRows: len, kind: InsightDatasetKind.Courses});
+                    }
+                }
+            }
+            fulfill(set);
+        });
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Oct 05 2018 16:09:23 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

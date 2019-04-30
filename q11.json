@@ -1,0 +1,23 @@
+{
+    "title": "query passing a string when it shouldn't",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "LT": {
+                    "courses_avg": "100"
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_instructor",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

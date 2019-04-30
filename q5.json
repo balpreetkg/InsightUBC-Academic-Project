@@ -1,0 +1,1150 @@
+{
+    "title": "query for when less than 2 students pass",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 2
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_instructor",
+                "courses_pass"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "math",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arch",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arch",
+            "courses_avg": 84,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arch",
+            "courses_avg": 84,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arch",
+            "courses_avg": 84,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arch",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 93,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 93,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "zool",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "wood",
+            "courses_avg": 72,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "wood",
+            "courses_avg": 1,
+            "courses_instructor": "",
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "stat",
+            "courses_avg": 93,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "busi",
+            "courses_avg": 4,
+            "courses_instructor": "",
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "busi",
+            "courses_avg": 4,
+            "courses_instructor": "",
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "stat",
+            "courses_avg": 93,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "ccst",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "ccst",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chbe",
+            "courses_avg": 76,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chbe",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "stat",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chil",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chil",
+            "courses_avg": 83,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chil",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chil",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chil",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chil",
+            "courses_avg": 88,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chil",
+            "courses_avg": 88,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "civl",
+            "courses_avg": 33,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "cnrs",
+            "courses_avg": 82,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 95,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 95,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_avg": 75,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "rsot",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "rmes",
+            "courses_avg": 89,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "rmes",
+            "courses_avg": 89,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_avg": 94,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 96,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 97,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 70,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 70,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 73,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 70,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "phth",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "phth",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "phil",
+            "courses_avg": 55.5,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 96,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 88,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 81,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 81,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 88,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 88,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "eece",
+            "courses_avg": 84,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "eece",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "eece",
+            "courses_avg": 91,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "eece",
+            "courses_avg": 88,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 86,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 84,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "eosc",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 84,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 86,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "frst",
+            "courses_avg": 0,
+            "courses_instructor": "",
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "frst",
+            "courses_avg": 71,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 95,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "geog",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "geog",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "grsj",
+            "courses_avg": 83,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 89,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 89,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "hist",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "hist",
+            "courses_avg": 83,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "iar",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "iar",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_avg": 0,
+            "courses_instructor": "",
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_avg": 0,
+            "courses_instructor": "",
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "libr",
+            "courses_avg": 86,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "arch",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "math",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 86,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 92,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "obst",
+            "courses_avg": 77,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_avg": 74,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "medi",
+            "courses_avg": 79,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mine",
+            "courses_avg": 90,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mine",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mine",
+            "courses_avg": 93,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mine",
+            "courses_avg": 93,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mine",
+            "courses_avg": 91,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 95,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 85,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "musc",
+            "courses_avg": 93,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nrsc",
+            "courses_avg": 80,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_avg": 74,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_avg": 82,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_avg": 91,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "zool",
+            "courses_avg": 87,
+            "courses_instructor": "",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "bmeg",
+            "courses_avg": 85,
+            "courses_instructor": "abolmaesumi, purang",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "bmeg",
+            "courses_avg": 83,
+            "courses_instructor": "abolmaesumi, purang",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 95,
+            "courses_instructor": "acheson, alison",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "fopr",
+            "courses_avg": 63,
+            "courses_instructor": "bendickson, dennis",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "fopr",
+            "courses_avg": 4.5,
+            "courses_instructor": "bendickson, dennis",
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "fopr",
+            "courses_avg": 87,
+            "courses_instructor": "bendickson, dennis",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 90,
+            "courses_instructor": "bhagavatula, sastry",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 93,
+            "courses_instructor": "bhagavatula, sastry",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 90,
+            "courses_instructor": "bhagavatula, sastry",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "engl",
+            "courses_avg": 72,
+            "courses_instructor": "bowers, fred",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "engl",
+            "courses_avg": 67,
+            "courses_instructor": "bowers, sarah",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "phar",
+            "courses_avg": 90,
+            "courses_instructor": "burt, helen mary",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "chem",
+            "courses_avg": 42.5,
+            "courses_instructor": "bussiere, guillaume;monga, vishakha;rogers, christine;stoodley, robin",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 97,
+            "courses_instructor": "campbell, deborah",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "bmeg",
+            "courses_avg": 90,
+            "courses_instructor": "cheung, karen;hodgson, antony",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "eece",
+            "courses_avg": 84,
+            "courses_instructor": "chrostowski, lukas;jaeger, nicolas a",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 90,
+            "courses_instructor": "galloway, steve",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 96,
+            "courses_instructor": "galloway, steve",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "frst",
+            "courses_avg": 84,
+            "courses_instructor": "gaston, christopher",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 88,
+            "courses_instructor": "godin, david v",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "hist",
+            "courses_avg": 59,
+            "courses_instructor": "gossen, david",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "hist",
+            "courses_avg": 34,
+            "courses_instructor": "gossen, david",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "hist",
+            "courses_avg": 86,
+            "courses_instructor": "gossen, david",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "hist",
+            "courses_avg": 77,
+            "courses_instructor": "gossen, david",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 98,
+            "courses_instructor": "grady, albert wayne",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "phar",
+            "courses_avg": 93,
+            "courses_instructor": "hafeli, urs",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "phar",
+            "courses_avg": 86,
+            "courses_instructor": "hafeli, urs;kumar, ujendra",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 69,
+            "courses_instructor": "hanson, laura",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "phil",
+            "courses_avg": 96,
+            "courses_instructor": "jackson, howard",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nurs",
+            "courses_avg": 94,
+            "courses_instructor": "jillings, carol",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 50,
+            "courses_instructor": "king, mary ann",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "psyc",
+            "courses_avg": 83,
+            "courses_instructor": "king, mary ann",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "pcth",
+            "courses_avg": 88,
+            "courses_instructor": "knight, darryl",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 92,
+            "courses_instructor": "lyon, annabel",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 90,
+            "courses_instructor": "lyon, annabel",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 96,
+            "courses_instructor": "maillard, keith",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 90,
+            "courses_instructor": "maillard, keith",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 98,
+            "courses_instructor": "maillard, keith",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 95,
+            "courses_instructor": "medved, maureen",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 94,
+            "courses_instructor": "medved, maureen",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 92,
+            "courses_instructor": "medved, maureen",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 96,
+            "courses_instructor": "medved, maureen",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "bioc",
+            "courses_avg": 72,
+            "courses_instructor": "molday, robert",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "engl",
+            "courses_avg": 73,
+            "courses_instructor": "potter, tiffany",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "engl",
+            "courses_avg": 80,
+            "courses_instructor": "potter, tiffany",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 85,
+            "courses_instructor": "roberts, frederick",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 95,
+            "courses_instructor": "svendsen, linda jane",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 96,
+            "courses_instructor": "taylor, timothy",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_avg": 92,
+            "courses_instructor": "taylor, timothy",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 90,
+            "courses_instructor": "tba",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 88,
+            "courses_instructor": "tba",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "mech",
+            "courses_avg": 90,
+            "courses_instructor": "tba",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_avg": 87,
+            "courses_instructor": "tba",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "rhsc",
+            "courses_avg": 91,
+            "courses_instructor": "tba",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "nrsc",
+            "courses_avg": 68,
+            "courses_instructor": "vincent, steven",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 85,
+            "courses_instructor": "walker, david",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "path",
+            "courses_avg": 90,
+            "courses_instructor": "walker, david",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 86,
+            "courses_instructor": "waterfield, john douglas",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "dent",
+            "courses_avg": 85,
+            "courses_instructor": "waterfield, john douglas",
+            "courses_pass": 1
+        },
+        {
+            "courses_dept": "ccst",
+            "courses_avg": 85,
+            "courses_instructor": "watson, scott",
+            "courses_pass": 1
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "title": "query that tries number instead of string for courses_instructor",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": 10
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}
